@@ -84,7 +84,7 @@ public class TileSourceFactory {
 	        int n=0;
                 for (int i=mTileSources.size()-1; i>=0; --i) {
                         if (mTileSources.get(i).name().matches(aRegex)) {
-		                mTileSources.remove(i);
+		                mTileSources.remove(i); 
 				++n;
 		        }
                 }
@@ -92,7 +92,7 @@ public class TileSourceFactory {
 	}
 
 	public static final OnlineTileSourceBase MAPNIK = new XYTileSource("Mapnik",
-			0, 19, 256, ".png", new String[] {
+			0, 18, 256, ".png", new String[] {
 					"http://a.tile.openstreetmap.org/",
 					"http://b.tile.openstreetmap.org/",
 					"http://c.tile.openstreetmap.org/" },"© OpenStreetMap contributors");
